@@ -1,14 +1,6 @@
 import Head from "next/head";
 import NextLink from "next/link";
-import {
-	Button,
-	Box,
-	Heading,
-	Link,
-	Code,
-	Icon,
-	Container,
-} from "@chakra-ui/react";
+import { Box, Heading, Link } from "@chakra-ui/react";
 
 export default function Home() {
 	return (
@@ -19,9 +11,6 @@ export default function Home() {
 					name="description"
 					content="Learn Japanese with shadowing method"
 				></meta>
-				<meta property="og:title" content=""></meta>
-				<meta property="og:description" content=""></meta>
-				<meta property="og:type" content="article"></meta>
 			</Head>
 
 			<Heading align="center" as="h2" size="lg">

@@ -1,5 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap");
 
 .App {
-  font-family: "Kiwi Maru", serif;
+	font-family: "Kiwi Maru", serif;
+}
+
+.color-1 {
+	color: #ed64a6;
+}
+.color-2 {
+	color: #9f7aea;
+}
+.color-3 {
+	color: #4299e1;
+}
+.color-4 {
+	color: #48bb78;
+}
+.color-5 {
+	color: #ed8936;
+}
+.color-6 {
+	color: #ecc94b;
+}
+.color-7 {
+	color: #f56565;
 }
