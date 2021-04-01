@@ -1,5 +1,6 @@
 import "../styles/globals.css";
 import { ChakraProvider, Box, Container } from "@chakra-ui/react";
+import Head from "next/head";
 
 import theme from "../theme";
 import Menu from "../components/Menu";
