@@ -5,10 +5,10 @@ import EndScreen from "./EndScreen";
 import next from "next";
 
 function PlayScreen({ transcript, audioSrc }) {
-	let [sentence, setSentence] = useState(4);
+	let [sentence, setSentence] = useState(0);
 	let [disablePlayButton, setDisablePlayButton] = useState(false);
-	let [showJap, setShowJap] = useState(true);
-	let [showEng, setShowEng] = useState(true);
+	let [showJap, setShowJap] = useState(false);
+	let [showEng, setShowEng] = useState(false);
 	let [played, setPlayed] = useState(false);
 	let playLabel = played ? "Repeat" : "Play";
 
