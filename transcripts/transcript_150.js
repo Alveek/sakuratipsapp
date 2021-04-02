@@ -1,41 +1,39 @@
 let transcript = [
 	{
 		jap:
-			"皆さんは<span class='color-1'>自転車</span>に<span class='color-2'>乗ります</span>か?",
-		eng:
-			"Do you <span class='color-2'>ride</span> a <span class='color-1'>bike</span>?",
+			"<wd fg='みな'>皆</wd>さんは<wd fg='じてんしゃ' c='1'>自転車</wd>に<wd c='2'><wd fg='の'>乗</wd>ります</wd>か?",
+		eng: "Do you <wd c='2'>ride</wd> a <wd c='1'>bike</wd>?",
 		start: { min: 0, sec: 46 },
 		finish: { min: 0, sec: 51 },
 	},
 	{
 		jap:
-			"<span class='color-1'>サイクリング</span>が<span class='color-2'>好き</span>ですか?",
-		eng:
-			"Do you <span class='color-2'>like</span> <span class='color-1''>cycling?</span>",
+			"<wd c='1'>サイクリング</wd>が<wd c='2'><wd fg='すき'>好</wd>き</wd>ですか?",
+		eng: "Do you <wd c='2'>like</wd> <wd c='1'>cycling?</wd>",
 		start: { min: 0, sec: 52 },
 		finish: { min: 0, sec: 56.5 },
 	},
 	{
 		jap:
-			"<span class='color-1'>私</span>は<span class='color-2'>たまに</span><span class='color-3'>自転車</span>に<span class='color-4'>乗ります</span>。",
+			"<wd c='1' fg='わたし'>私</wd>は<wd c='2'>たまに</wd><wd c='3' fg='じてんしゃ'>自転車</wd>に<wd c='4'><wd fg='の'>乗</wd>ります</wd>。",
 		eng:
-			"<span class='color-1'>I</span> <span class='color-4'>ride</span> a <span class='color-3'>bike</span> <span class='color-2'>once in a while</span>.",
+			"<wd c='1'>I</wd> <wd c='4'>ride</wd> a <wd c='3'>bike</wd> <wd c='2'>once in a while</wd>.",
 		start: { min: 0, sec: 58 },
 		finish: { min: 1, sec: 4.5 },
 	},
 	{
 		jap:
-			"<span class='color-1'>私</span>は<span class='color-2'>駅</span>の<span class='color-3'>近く</span>に<span class='color-4'>住んで</span>いるので、<span class='color-5'>自転車</span>は<span class='color-6'>あまり</span><span class='color-7'>使いません</span>。",
+			"<wd c='1' fg='わたし'>私</wd>は<wd c='2' fg='えき'>駅</wd>の<wd c='3'><wd fg='ちか'>近</wd>く</wd>に<wd c='4'><wd fg='す'>住</wd>んで</wd>いるので、<wd c='5' fg='じてんしゃ'>自転車</wd>は<wd c='6'>あまり</wd><wd c='7'><wd fg='つか'>使</wd>いません</wd>。",
 		eng:
-			"<span class='color-1'>I</span> <span class='color-4'>live</span> <span class='color-3'>near</span> <span class='color-2'>a train station</span>, so I <span class='color-7'>don’t use</span> my <span class='color-5'>bike</span> <span class='color-6'>much</span>.",
+			"<wd c='1'>I</wd> <wd c='4'>live</wd> <wd c='3'>near</wd> <wd c='2'>a train station</wd>, so I <wd c='7'>don’t use</wd> my <wd c='5'>bike</wd> <wd c='6'>much</wd>.",
 		start: { min: 1, sec: 7 },
 		finish: { min: 1, sec: 19 },
 	},
 	{
 		jap:
-			"<span class='color-1'>でも</span>、<span class='color-2'>天気</span>が<span class='color-3'>良い</span>日は<span class='color-4'>たまに</span><span class='color-5'>サイクリング</span>に<span class='color-6'>行きます</span>。",
+			"<wd c='1'>でも</wd>、<wd c='2' fg='てんき'>天気</wd>が<wd c='3'>良い</wd><wd fg='ひ'>日</wd>は<wd c='4'>たまに</wd><wd c='5'>サイクリング</wd>に<wd c='6'><wd fg='い'>行</wd>きます</wd>。",
 		eng:
-			"<span class='color-1'>But</span> when the <span class='color-2'>weather</span> is <span class='color-3'>nice</span>, I <span class='color-4'>sometimes</span> <span class='color-6'>go</span> <span class='color-5'>cycling</span>.",
+			"<wd c='1'>But</wd> when the <wd c='2'>weather</wd> is <wd c='3'>nice</wd>, I <wd c='4'>sometimes</wd> <wd c='6'>go</wd> <wd c='5'>cycling</wd>.",
 		start: { min: 1, sec: 22 },
 		finish: { min: 1, sec: 32 },
 	},

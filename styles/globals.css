@@ -4,6 +4,51 @@
 	font-family: "Kiwi Maru", serif;
 }
 
+wd {
+	--display-furigana: block;
+	display: inline-block;
+	text-indent: 0px;
+	line-height: normal;
+	-webkit-text-emphasis: none;
+	text-align: center;
+	line-height: 1;
+}
+
+wd:before {
+	content: attr(fg);
+	display: var(--display-furigana);
+	font-size: 62%;
+	text-align: center;
+	line-height: 1.5;
+	color: rgb(10, 10, 10);
+}
+
+wd[c="1"] {
+	color: #ed64a6;
+}
+
+wd[c="2"] {
+	color: #9f7aea;
+}
+wd[c="3"] {
+	color: #4299e1;
+}
+wd[c="4"] {
+	color: #48bb78;
+}
+wd[c="5"] {
+	color: #ed8936;
+}
+wd[c="6"] {
+	color: #ecc94b;
+}
+wd[c="7"] {
+	color: #373ae6;
+}
+wd[c="8"] {
+	color: #f56565;
+}
+
 .color-1 {
 	color: #ed64a6;
 }

@@ -4,7 +4,7 @@ import { Box, Text, Button, Progress, Flex, Spacer } from "@chakra-ui/react";
 import EndScreen from "./EndScreen";
 import next from "next";
 
-function PlayScreen({ transcript, audioSrc }) {
+function PlayScreen({ transcript, audioSrc, extLink }) {
 	let [sentence, setSentence] = useState(0);
 	let [disablePlayButton, setDisablePlayButton] = useState(false);
 	let [showJap, setShowJap] = useState(false);
@@ -62,15 +62,15 @@ function PlayScreen({ transcript, audioSrc }) {
 	return (
 		<>
 			<Progress
-				size="xs"
-				colorScheme="green"
+				size="md"
+				colorScheme="purple"
 				mt={5}
 				value={sentence}
 				max={transcript.length - 2}
 			/>
 			{sentence !== transcript.length - 1 ? (
 				<>
-					<Box mt={5} mx="auto" width="100%" textAlign="center">
+					<Box mt={7} mx="auto" width="100%" textAlign="center">
 						{showJap ? (
 							<Text fontSize="3xl" onClick={() => setShowJap(false)}>
 								<div
@@ -164,6 +164,7 @@ function PlayScreen({ transcript, audioSrc }) {
 					startAgain={() => {
 						setSentence(0);
 					}}
+					extLink={extLink}
 				/>
 			)}
 		</>
