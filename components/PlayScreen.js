@@ -72,7 +72,7 @@ function PlayScreen({ transcript, audioSrc, extLink }) {
 				<>
 					<Box mt={7} mx="auto" width="100%" textAlign="center">
 						{showJap ? (
-							<Text fontSize="3xl" onClick={() => setShowJap(false)}>
+							<Text fontSize="2xl" onClick={() => setShowJap(false)}>
 								<div
 									dangerouslySetInnerHTML={{ __html: transcript[sentence].jap }}
 								/>
@@ -91,7 +91,7 @@ function PlayScreen({ transcript, audioSrc, extLink }) {
 							</Text>
 						)}
 						{showEng ? (
-							<Text fontSize="2xl" onClick={() => setShowEng(false)}>
+							<Text fontSize="xl" onClick={() => setShowEng(false)}>
 								<div
 									dangerouslySetInnerHTML={{ __html: transcript[sentence].eng }}
 								/>
