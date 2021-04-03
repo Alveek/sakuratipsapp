@@ -2,7 +2,6 @@ import { useState, useEffect } from "react";
 
 import { Box, Text, Button, Progress, Flex, Spacer } from "@chakra-ui/react";
 import EndScreen from "./EndScreen";
-import next from "next";
 
 function PlayScreen({ transcript, audioSrc, extLink }) {
 	let [sentence, setSentence] = useState(0);
@@ -72,7 +71,11 @@ function PlayScreen({ transcript, audioSrc, extLink }) {
 				<>
 					<Box mt={7} mx="auto" width="100%" textAlign="center">
 						{showJap ? (
-							<Text fontSize="2xl" onClick={() => setShowJap(false)}>
+							<Text
+								fontSize="3xl"
+								color="blue.700"
+								onClick={() => setShowJap(false)}
+							>
 								<div
 									dangerouslySetInnerHTML={{ __html: transcript[sentence].jap }}
 								/>
