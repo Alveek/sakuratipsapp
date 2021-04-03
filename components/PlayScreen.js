@@ -61,7 +61,7 @@ function PlayScreen({ transcript, audioSrc, extLink }) {
 	return (
 		<>
 			<Progress
-				size="md"
+				size="sm"
 				colorScheme="purple"
 				mt={5}
 				value={sentence}
