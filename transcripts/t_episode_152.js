@@ -14,7 +14,7 @@ let transcript = [
 	},
 	{
 		jap:
-			"<ruby><rb>英語</rb><rp>(</rp><rt>えいご</rt><rp>)</rp></ruby>では、IKEAです。",
+			"<ruby><rb>英語</rb><rp>(</rp><rt>えいご</rt><rp>)</rp></ruby>だと、IKEAです。",
 		eng: "In English, it’s IKEA.",
 		start: { min: 0, sec: 57 },
 		finish: { min: 1, sec: 2 },
