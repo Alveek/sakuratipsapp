@@ -1,6 +1,7 @@
 import Head from "next/head";
 import NextLink from "next/link";
 import { Box, Heading, Link } from "@chakra-ui/react";
+import { episode_list } from "../transcripts/episodes_list";
 
 export default function Home() {
 	return (
@@ -16,21 +17,14 @@ export default function Home() {
 			<Heading align="center" as="h2" size="lg">
 				Podcast Episodes:
 			</Heading>
-			<NextLink href="/episodes/episode_150">
-				<Link p={2} display="block" fontSize={{ base: "20px", md: "20px" }}>
-					150. サイクリング Cycling
-				</Link>
-			</NextLink>
-			<NextLink href="/episodes/episode_151">
-				<Link p={2} display="block" fontSize={{ base: "20px", md: "20px" }}>
-					151. コロッケ Croquette
-				</Link>
-			</NextLink>
-			<NextLink href="/episodes/episode_152">
-				<Link p={2} display="block" fontSize={{ base: "20px", md: "20px" }}>
-					152. イケア IKEA
-				</Link>
-			</NextLink>
+
+			{episode_list.map((episode) => (
+				<NextLink href={"/episodes/episode_" + episode.number}>
+					<Link p={2} display="block" fontSize={{ base: "20px", md: "20px" }}>
+						{episode.number}. {episode.name}
+					</Link>
+				</NextLink>
+			))}
 		</Box>
 	);
 }

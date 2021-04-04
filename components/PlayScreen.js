@@ -1,6 +1,15 @@
 import { useState, useEffect } from "react";
 
-import { Box, Text, Button, Progress, Flex, Spacer } from "@chakra-ui/react";
+import {
+	Box,
+	Text,
+	Button,
+	Progress,
+	Flex,
+	Spacer,
+	Divider,
+} from "@chakra-ui/react";
+import Controls from "./Controls";
 import EndScreen from "./EndScreen";
 
 function PlayScreen({ transcript, audioSrc, extLink }) {
@@ -8,6 +17,8 @@ function PlayScreen({ transcript, audioSrc, extLink }) {
 	let [disablePlayButton, setDisablePlayButton] = useState(false);
 	let [showJap, setShowJap] = useState(false);
 	let [showEng, setShowEng] = useState(false);
+	let [showFurigana, setShowFurigana] = useState(false);
+
 	let [played, setPlayed] = useState(false);
 	let playLabel = played ? "Repeat" : "Play";
 
@@ -45,6 +56,7 @@ function PlayScreen({ transcript, audioSrc, extLink }) {
 		setSentence(sentence + 1);
 		setShowJap(false);
 		setShowEng(false);
+
 		// setPlayed(false);
 
 		startFrom =
@@ -67,9 +79,12 @@ function PlayScreen({ transcript, audioSrc, extLink }) {
 				value={sentence}
 				max={transcript.length - 2}
 			/>
+			<Controls showFurigana={showFurigana} setShowFurigana={setShowFurigana} />
+			<Divider />
+
 			{sentence !== transcript.length - 1 ? (
 				<>
-					<Box mt={7} mx="auto" width="100%" textAlign="center">
+					<Box mt={3} mx="auto" width="100%" textAlign="center">
 						{showJap ? (
 							<Text
 								fontSize="3xl"
@@ -94,7 +109,12 @@ function PlayScreen({ transcript, audioSrc, extLink }) {
 							</Text>
 						)}
 						{showEng ? (
-							<Text fontSize="xl" onClick={() => setShowEng(false)}>
+							<Text
+								fontSize="xl"
+								color="teal.500"
+								fontWeight="600"
+								onClick={() => setShowEng(false)}
+							>
 								<div
 									dangerouslySetInnerHTML={{ __html: transcript[sentence].eng }}
 								/>
