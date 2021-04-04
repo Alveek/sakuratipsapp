@@ -16,7 +16,7 @@ export default function Home() {
 			<Heading align="center" as="h2" size="lg">
 				Podcast Episodes:
 			</Heading>
-			<NextLink href="/episodes/episode_150_cycling">
+			<NextLink href="/episodes/episode_150">
 				<Link p={2} display="block" fontSize={{ base: "20px", md: "20px" }}>
 					150. サイクリング Cycling
 				</Link>

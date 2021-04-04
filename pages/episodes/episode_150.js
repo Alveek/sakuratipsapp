@@ -1,7 +1,6 @@
-import { transcript } from "../../transcripts/transcript_150";
+import { transcript } from "../../transcripts/t_episode_150";
 import PlayScreen from "../../components/PlayScreen";
 import { Box, Heading, Text, Link } from "@chakra-ui/react";
-import NextLink from "next/link";
 
 export default function episode_150_cycling() {
 	return (

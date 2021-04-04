@@ -4,10 +4,10 @@ import { Box, Text, Button, Progress, Flex, Spacer } from "@chakra-ui/react";
 import EndScreen from "./EndScreen";
 
 function PlayScreen({ transcript, audioSrc, extLink }) {
-	let [sentence, setSentence] = useState(0);
+	let [sentence, setSentence] = useState(4);
 	let [disablePlayButton, setDisablePlayButton] = useState(false);
-	let [showJap, setShowJap] = useState(false);
-	let [showEng, setShowEng] = useState(false);
+	let [showJap, setShowJap] = useState(true);
+	let [showEng, setShowEng] = useState(true);
 	let [played, setPlayed] = useState(false);
 	let playLabel = played ? "Repeat" : "Play";
 
