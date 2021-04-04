@@ -8,7 +8,7 @@ let transcript = [
 	},
 	{
 		jap:
-			"さいくりんぐが<ruby><rb>好</rb><rp>(</rp><rt>す</rt><rp>)</rp></ruby>きですか?",
+			"サイクリングが<ruby><rb>好</rb><rp>(</rp><rt>す</rt><rp>)</rp></ruby>きですか?",
 		eng: "Do you like cycling?",
 		start: { min: 0, sec: 52 },
 		finish: { min: 0, sec: 56.5 },
@@ -29,7 +29,7 @@ let transcript = [
 	},
 	{
 		jap:
-			"でも、<ruby><rb>天気</rb><rp>(</rp><rt>てんき</rt><rp>)</rp></ruby>が<ruby><rb>良</rb><rp>(</rp><rt>よ</rt><rp>)</rp></ruby>い<ruby><rb>日</rb><rp>(</rp><rt>ひ</rt><rp>)</rp></ruby>はたまにさいくりんぐに<ruby><rb>行</rb><rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます。",
+			"でも、<ruby><rb>天気</rb><rp>(</rp><rt>てんき</rt><rp>)</rp></ruby>が<ruby><rb>良</rb><rp>(</rp><rt>よ</rt><rp>)</rp></ruby>い<ruby><rb>日</rb><rp>(</rp><rt>ひ</rt><rp>)</rp></ruby>はたまにサイクリングに<ruby><rb>行</rb><rp>(</rp><rt>い</rt><rp>)</rp></ruby>きます。",
 		eng: "But when the weather is nice, I sometimes go cycling.",
 		start: { min: 1, sec: 22 },
 		finish: { min: 1, sec: 32 },
