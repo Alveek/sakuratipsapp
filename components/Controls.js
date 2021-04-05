@@ -49,6 +49,8 @@ export default function Footer({ showFurigana, setShowFurigana, quit }) {
 				/>
 			</FormControl>
 			<Button
+				border="1px"
+				borderColor="gray.300"
 				size="sm"
 				onClick={() => {
 					quit();

@@ -46,7 +46,12 @@ function EndScreen({ startAgain, extLink }) {
 			</SimpleGrid>
 
 			<Divider />
-			<Box mt={14} textAlign="center" mx="auto" maxWidth="250px">
+			<Box
+				mt={{ base: 4, md: 14 }}
+				textAlign="center"
+				mx="auto"
+				maxWidth="250px"
+			>
 				<Text fontWeight="bold">\ Follow me /</Text>
 				<Button
 					mr={2}
@@ -72,6 +77,7 @@ function EndScreen({ startAgain, extLink }) {
 					color="white"
 					as="a"
 					target="_blank"
+					_hover={{ filter: "brightness(0.92)" }}
 					href="https://www.instagram.com/sakura_tips/"
 				>
 					<Icon w="6" h="6" as={FaInstagram} />
@@ -91,6 +97,7 @@ function EndScreen({ startAgain, extLink }) {
 					width="100%"
 					as="a"
 					target="_blank"
+					_hover={{ filter: "brightness(0.92)" }}
 					href="https://www.patreon.com/bePatron?u=47302003&redirect_uri=https%3A%2F%2Fsakuratips.com%2F2021%2F03%2F29%2F152%2F&utm_medium=widget"
 				>
 					Support us on patreon

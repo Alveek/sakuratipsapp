@@ -72,22 +72,21 @@ function PlayScreen({ transcript, audioSrc, extLink }) {
 
 	return (
 		<>
-			<Progress
-				size="sm"
-				colorScheme="purple"
-				mt={5}
-				value={sentence}
-				max={transcript.length - 2}
-			/>
-			<Controls
-				showFurigana={showFurigana}
-				setShowFurigana={setShowFurigana}
-				quit={() => setSentence(transcript.length - 1)}
-			/>
-			<Divider />
-
 			{sentence !== transcript.length - 1 ? (
 				<>
+					<Progress
+						size="sm"
+						colorScheme="purple"
+						mt={5}
+						value={sentence}
+						max={transcript.length - 2}
+					/>
+					<Controls
+						showFurigana={showFurigana}
+						setShowFurigana={setShowFurigana}
+						quit={() => setSentence(transcript.length - 1)}
+					/>
+					<Divider />
 					<Box mt={3} mx="auto" maxWidth="960px" textAlign="center">
 						{showJap ? (
 							<Text
