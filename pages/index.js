@@ -10,7 +10,7 @@ export default function Home() {
 				<title>SAKURA TIPS APP</title>
 				<meta
 					name="description"
-					content="Learn Japanese with shadowing method"
+					content="Practice Japanese by shadowing"
 				></meta>
 			</Head>
 

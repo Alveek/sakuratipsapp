@@ -79,12 +79,16 @@ function PlayScreen({ transcript, audioSrc, extLink }) {
 				value={sentence}
 				max={transcript.length - 2}
 			/>
-			<Controls showFurigana={showFurigana} setShowFurigana={setShowFurigana} />
+			<Controls
+				showFurigana={showFurigana}
+				setShowFurigana={setShowFurigana}
+				quit={() => setSentence(transcript.length - 1)}
+			/>
 			<Divider />
 
 			{sentence !== transcript.length - 1 ? (
 				<>
-					<Box mt={3} mx="auto" width="100%" textAlign="center">
+					<Box mt={3} mx="auto" maxWidth="960px" textAlign="center">
 						{showJap ? (
 							<Text
 								fontSize="3xl"
@@ -101,6 +105,7 @@ function PlayScreen({ transcript, audioSrc, extLink }) {
 								cursor="pointer"
 								border="2px solid #38A169"
 								bg="green.100"
+								color="blue.400"
 								py={4}
 								px={10}
 								onClick={() => setShowJap(true)}
@@ -124,6 +129,7 @@ function PlayScreen({ transcript, audioSrc, extLink }) {
 								fontSize="2xl"
 								cursor="pointer"
 								bg="purple.100"
+								color="blue.400"
 								border="2px solid #6B46C1"
 								py={4}
 								px={10}

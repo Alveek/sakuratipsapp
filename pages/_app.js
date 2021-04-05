@@ -10,8 +10,7 @@ import Footer from "../components/Footer";
 function MyApp({ Component, pageProps }) {
 	return (
 		<ChakraProvider theme={theme}>
-			<Nav />
-
+				<Nav />
 			<Container
 				className="App"
 				as="main"
@@ -51,7 +50,7 @@ function MyApp({ Component, pageProps }) {
 				</Box>
 			</Container>
 			{/* <Menu /> */}
-			<Footer />
+			{/* <Footer /> */}
 		</ChakraProvider>
 	);
 }
