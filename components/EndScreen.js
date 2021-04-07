@@ -52,7 +52,13 @@ function EndScreen({ startAgain, extLink }) {
 				mx="auto"
 				maxWidth="250px"
 			>
-				<Text fontWeight="bold">\ Follow me /</Text>
+				<Text
+					bgGradient="linear(to-l, #7928CA,#FF0080)"
+					bgClip="text"
+					fontWeight="bold"
+				>
+					\ Follow me /
+				</Text>
 				<Button
 					mr={2}
 					colorScheme="twitter"

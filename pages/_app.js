@@ -10,9 +10,13 @@ import Footer from "../components/Footer";
 function MyApp({ Component, pageProps }) {
 	return (
 		<ChakraProvider theme={theme}>
-				<Nav />
+			<Nav />
 			<Container
 				className="App"
+				bgImage="url('/media/sakura_bg.jpg')"
+				bgPosition="auto"
+				bgRepeat="no-repeat"
+				bgSize="contain"
 				as="main"
 				maxW="960px"
 				px={{ base: 5, md: 8 }}
@@ -45,7 +49,7 @@ function MyApp({ Component, pageProps }) {
 						}}
 					/>
 				</Head>
-				<Box mt={{ base: "20px", md: "20px" }} pb={8}>
+				<Box py={5}>
 					<Component {...pageProps} />
 				</Box>
 			</Container>

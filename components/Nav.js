@@ -8,40 +8,39 @@ import {
 	IconButton,
 	Stack,
 	Flex,
+	Image,
 } from "@chakra-ui/react";
 
 export default function Nav() {
 	return (
 		<Box
 			as="nav"
-			boxShadow="md"
-			bg="gray.200"
-			// position="fixed"
-			// left="0"
-			// right="0"
-			// top="0"
+			// boxShadow="md"
+			bg="#FFCDCB"
 		>
-			<Container maxW="960px" py={1} px={{ base: 5, md: 8 }}>
+			<Container maxW="960px" pt={1} px={{ base: 5, md: 8 }}>
 				<Flex
-					height={{ base: "54px", md: "60px" }}
-					justifyContent="start"
+					height={{ base: "55px", md: "60px" }}
+					justifyContent="center"
 					alignItems="center"
 				>
+					<Image
+						width="60px"
+						src="/media/logo.png"
+						alt="sakuratips logo"
+						display="inline"
+						ml="-13px"
+					/>
 					<NextLink href="/">
 						<Text
 							as="a"
-							// color="pink.500"
-							bgGradient="linear(to-l, #7928CA,#FF0080)"
-							bgClip="text"
-							fontWeight="bold"
+							color="#F666B4"
+							fontWeight="500"
 							fontSize={{ base: "xl", md: "3xl" }}
 							margin={0}
 							cursor="pointer"
 						>
-							SAKURA TIPS APP{" "}
-							{/* <span role="img" aria-label="cherry blossom image">
-								&#127800;
-							</span>{" "} */}
+							SAKURA TIPS APP
 						</Text>
 					</NextLink>
 				</Flex>

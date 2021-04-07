@@ -76,7 +76,7 @@ function PlayScreen({ transcript, audioSrc, extLink }) {
 				<>
 					<Progress
 						size="sm"
-						colorScheme="purple"
+						colorScheme="pink"
 						mt={5}
 						value={sentence}
 						max={transcript.length - 2}
@@ -116,7 +116,7 @@ function PlayScreen({ transcript, audioSrc, extLink }) {
 							<Text
 								fontSize="xl"
 								color="teal.500"
-								fontWeight="600"
+								fontWeight="500"
 								onClick={() => setShowEng(false)}
 							>
 								<div

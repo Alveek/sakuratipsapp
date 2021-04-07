@@ -36,7 +36,7 @@ export default function Footer({ showFurigana, setShowFurigana, quit }) {
 	return (
 		<Flex my={3}>
 			<FormControl display="flex" alignItems="center">
-				<FormLabel htmlFor="furigana-controls" mb="1">
+				<FormLabel fontWeight="400" htmlFor="furigana-controls" mb="1">
 					Furigana
 				</FormLabel>
 				<Switch
@@ -50,6 +50,7 @@ export default function Footer({ showFurigana, setShowFurigana, quit }) {
 			</FormControl>
 			<Button
 				border="1px"
+				fontWeight="400"
 				borderColor="gray.300"
 				size="sm"
 				onClick={() => {
