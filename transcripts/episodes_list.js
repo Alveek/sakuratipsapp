@@ -11,6 +11,10 @@ let episode_list = [
 		number: 152,
 		name: "イケア IKEA",
 	},
+	{
+		number: 153,
+		name: "筋肉痛 Muscles Pain",
+	},
 ];
 
 export { episode_list };

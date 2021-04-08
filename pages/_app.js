@@ -14,13 +14,14 @@ function MyApp({ Component, pageProps }) {
 			<Container
 				className="App"
 				bgImage="url('/media/sakura_bg.jpg')"
-				bgPosition="auto"
+				bgPosition={{ base: "top -30px right 0", md: "top -90px right 0" }}
 				bgRepeat="no-repeat"
 				bgSize="contain"
 				as="main"
 				maxW="960px"
-				px={{ base: 5, md: 8 }}
-				minH={{ base: "calc(100vh - 115px)", md: "calc(100vh - 136px)" }}
+				px={{ base: 4, md: 8 }}
+				minH={{ base: "calc(100vh - 80px)", md: "calc(100vh - 136px)" }}
+				// minH="100vh"
 			>
 				<Head>
 					<meta name="yandex-verification" content="0499116b97024f38" />

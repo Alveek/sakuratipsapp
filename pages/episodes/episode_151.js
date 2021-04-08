@@ -4,15 +4,12 @@ import { Box, Heading, Text, Link } from "@chakra-ui/react";
 
 export default function episode_151() {
 	return (
-		<Box as="article">
-			<Heading as="h1" mb={6} size="md" textAlign="center">
-				151. コロッケ Croquette
-			</Heading>
-
+		<Box>
 			<PlayScreen
 				audioSrc="/media/episode_151.mp3"
 				transcript={transcript}
 				extLink="https://sakuratips.com/2021/03/28/151/"
+				episodeName="151. コロッケ Croquette"
 			/>
 		</Box>
 	);

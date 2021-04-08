@@ -8,11 +8,12 @@ import {
 	Flex,
 	Spacer,
 	Divider,
+	Heading,
 } from "@chakra-ui/react";
 import Controls from "./Controls";
 import EndScreen from "./EndScreen";
 
-function PlayScreen({ transcript, audioSrc, extLink }) {
+function PlayScreen({ transcript, audioSrc, extLink, episodeName }) {
 	let [sentence, setSentence] = useState(0);
 	let [disablePlayButton, setDisablePlayButton] = useState(false);
 	let [showJap, setShowJap] = useState(false);
@@ -71,7 +72,18 @@ function PlayScreen({ transcript, audioSrc, extLink }) {
 	}
 
 	return (
-		<>
+		<Box bg="rgba(255, 255, 255, .3)" p={2} mt={{ base: "30px", md: "150px" }}>
+			<Heading
+				bg="rgba(255, 255, 255, 0.2)"
+				color="gray.700"
+				fontWeight="600"
+				as="h1"
+				mb={6}
+				size="lg"
+				textAlign="center"
+			>
+				{episodeName}
+			</Heading>
 			{sentence !== transcript.length - 1 ? (
 				<>
 					<Progress
@@ -87,7 +99,7 @@ function PlayScreen({ transcript, audioSrc, extLink }) {
 						quit={() => setSentence(transcript.length - 1)}
 					/>
 					<Divider />
-					<Box mt={3} mx="auto" maxWidth="960px" textAlign="center">
+					<Box mt={5} mx="auto" maxWidth="960px" textAlign="center">
 						{showJap ? (
 							<Text
 								fontSize="3xl"
@@ -140,10 +152,9 @@ function PlayScreen({ transcript, audioSrc, extLink }) {
 					</Box>
 
 					<Box
-						mt={20}
-						// border="1px solid blue"
+						mt="90px"
 						position={{ base: "absolute", md: "static" }}
-						bottom={{ base: "80px" }}
+						bottom={{ base: "40px" }}
 						right={{ base: "0px" }}
 						width={{ base: "100%" }}
 						display="flex"
@@ -195,7 +206,7 @@ function PlayScreen({ transcript, audioSrc, extLink }) {
 					extLink={extLink}
 				/>
 			)}
-		</>
+		</Box>
 	);
 }
 

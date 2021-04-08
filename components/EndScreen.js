@@ -10,12 +10,7 @@ import {
 	Icon,
 } from "@chakra-ui/react";
 import NextLink from "next/link";
-import {
-	FaTwitter,
-	FaFacebookSquare,
-	FaInstagram,
-	FaYoutube,
-} from "react-icons/fa";
+import { FaTwitter, FaPatreon, FaInstagram, FaYoutube } from "react-icons/fa";
 
 function EndScreen({ startAgain, extLink }) {
 	return (
@@ -70,12 +65,13 @@ function EndScreen({ startAgain, extLink }) {
 				</Button>
 				<Button
 					mr={2}
-					colorScheme="facebook"
+					fontSize="1.2em"
+					bg="lightyellow"
 					as="a"
 					target="_blank"
-					href="https://www.pinterest.jp/sakuratips/_created/"
+					href="https://www.joinclubhouse.com/@sakuratips"
 				>
-					<Icon w="6" h="6" as={FaFacebookSquare} />
+					👋
 				</Button>
 				<Button
 					mr={2}
