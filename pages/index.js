@@ -1,6 +1,6 @@
 import Head from "next/head";
 import NextLink from "next/link";
-import { Box, Heading, Link } from "@chakra-ui/react";
+import { Box, Heading, Link, Text } from "@chakra-ui/react";
 import { episode_list } from "../transcripts/episodes_list";
 
 export default function Home() {
@@ -14,9 +14,6 @@ export default function Home() {
 				></meta>
 			</Head>
 
-			{/* <Heading align="center" as="h2" size="lg">
-				Podcast Episodes:
-			</Heading> */}
 			<Box
 				bg="rgba(255,255,255, 0.4);"
 				mx="auto"
@@ -25,13 +22,21 @@ export default function Home() {
 			>
 				{episode_list.map((episode, index) => (
 					<NextLink key={index} href={"/episodes/episode_" + episode.number}>
-						<Link
-							fontWeight="500"
-							pb={3}
-							display="block"
-							fontSize={{ base: "18px", md: "20px", lg: "24px" }}
-						>
-							{episode.number}. {episode.name}
+						<Link fontWeight="500" pb={3} display="block">
+							<Text
+								fontSize={{ base: "18px", md: "20px", lg: "24px" }}
+								display="inline"
+								color="pink"
+							>
+								{episode.number}.
+							</Text>{" "}
+							<Text
+								fontSize={{ base: "18px", md: "20px", lg: "24px" }}
+								display="inline"
+								color="blue.800"
+							>
+								{episode.name}
+							</Text>{" "}
 						</Link>
 					</NextLink>
 				))}

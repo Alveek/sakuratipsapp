@@ -9,7 +9,7 @@ export default function episode_152() {
 				audioSrc="/media/episode_152.mp3"
 				transcript={transcript}
 				extLink="https://sakuratips.com/2021/03/29/152/"
-				episodeName="152. イケア IKEA"
+				episodeName="イケア IKEA"
 			/>
 		</Box>
 	);

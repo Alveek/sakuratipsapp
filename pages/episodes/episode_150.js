@@ -9,7 +9,7 @@ export default function episode_150() {
 				audioSrc="/media/cycling.mp3"
 				transcript={transcript}
 				extLink="https://sakuratips.com/2021/03/27/150/"
-				episodeName="150. サイクリング Cycling"
+				episodeName="サイクリング Cycling"
 			/>
 		</Box>
 	);

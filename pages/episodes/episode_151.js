@@ -9,7 +9,7 @@ export default function episode_151() {
 				audioSrc="/media/episode_151.mp3"
 				transcript={transcript}
 				extLink="https://sakuratips.com/2021/03/28/151/"
-				episodeName="151. コロッケ Croquette"
+				episodeName="コロッケ Croquette"
 			/>
 		</Box>
 	);

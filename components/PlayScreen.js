@@ -75,7 +75,7 @@ function PlayScreen({ transcript, audioSrc, extLink, episodeName }) {
 		<Box bg="rgba(255, 255, 255, .3)" p={2} mt={{ base: "30px", md: "150px" }}>
 			<Heading
 				bg="rgba(255, 255, 255, 0.2)"
-				color="gray.700"
+				color="blue.800"
 				fontWeight="600"
 				as="h1"
 				mb={6}
@@ -154,7 +154,7 @@ function PlayScreen({ transcript, audioSrc, extLink, episodeName }) {
 					<Box
 						mt="90px"
 						position={{ base: "absolute", md: "static" }}
-						bottom={{ base: "40px" }}
+						bottom={{ base: "50px" }}
 						right={{ base: "0px" }}
 						width={{ base: "100%" }}
 						display="flex"

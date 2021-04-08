@@ -9,7 +9,7 @@ export default function episode_153() {
 				audioSrc="/media/episode_153.mp3"
 				transcript={transcript}
 				extLink="https://sakuratips.com/2021/03/30/153/"
-				episodeName="153. 筋肉痛 Muscles Pain"
+				episodeName="筋肉痛 Muscles Pain"
 			/>
 		</Box>
 	);
