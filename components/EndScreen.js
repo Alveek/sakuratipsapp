@@ -80,7 +80,7 @@ function EndScreen({ startAgain, extLink }) {
 					as="a"
 					target="_blank"
 					_hover={{ filter: "brightness(0.92)" }}
-					href="https://www.instagram.com/sakura_tips/"
+					href="https://www.instagram.com/sakura_tips_language/"
 				>
 					<Icon w="6" h="6" as={FaInstagram} />
 				</Button>
