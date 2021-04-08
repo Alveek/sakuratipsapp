@@ -1,5 +1,6 @@
 import React from "react";
 import NextLink from "next/link";
+import Image from "next/image";
 import {
 	Box,
 	Container,
@@ -8,7 +9,6 @@ import {
 	IconButton,
 	Stack,
 	Flex,
-	Image,
 } from "@chakra-ui/react";
 
 export default function Nav() {
@@ -26,6 +26,7 @@ export default function Nav() {
 				>
 					<Image
 						width="60px"
+						height="60px"
 						src="/media/logo.png"
 						alt="sakuratips logo"
 						display="inline"
