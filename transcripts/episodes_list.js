@@ -23,6 +23,10 @@ let episode_list = [
 		number: 155,
 		name: "エイプリルフール April Fool",
 	},
+	{
+		number: 156,
+		name: "ココア Cocoa",
+	},
 ];
 
 export { episode_list };

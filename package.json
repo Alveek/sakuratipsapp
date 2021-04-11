@@ -7,6 +7,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@babel/core": "^7.13.15",
     "@chakra-ui/icons": "1.0.8",
     "@chakra-ui/react": "1.4.2",
     "@emotion/react": "11.1.5",

@@ -1,7 +1,7 @@
 import PlayScreen from "../../components/PlayScreen";
 import { Box } from "@chakra-ui/react";
 
-export default function episode_153() {
+export default function episode_155() {
 	let transcript = [
 		{
 			jap:
