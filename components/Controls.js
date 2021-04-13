@@ -6,9 +6,16 @@ import {
 	Button,
 	Flex,
 } from "@chakra-ui/react";
+import VocabModal from "./VocabModal";
 import { useEffect } from "react";
 
-export default function Footer({ showFurigana, setShowFurigana, quit }) {
+export default function Footer({
+	showFurigana,
+	setShowFurigana,
+	quit,
+	vocab,
+	v_sentence,
+}) {
 	function enableFurigana(e) {
 		if (e.target.checked) {
 			Array.from(document.querySelectorAll("rt")).forEach((el) => {
@@ -48,10 +55,11 @@ export default function Footer({ showFurigana, setShowFurigana, quit }) {
 					}}
 				/>
 			</FormControl>
+			{vocab && <VocabModal vocab={vocab} v_sentence={v_sentence} />}
 			<Button
 				border="1px"
 				fontWeight="400"
-				borderColor="gray.300"
+				borderColor="blue.500"
 				size="sm"
 				onClick={() => {
 					quit();

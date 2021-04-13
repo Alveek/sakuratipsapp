@@ -27,6 +27,10 @@ let episode_list = [
 		number: 156,
 		name: "ココア Cocoa",
 	},
+	{
+		number: 157,
+		name: "桜が散る Sakura is falling",
+	},
 ];
 
 export { episode_list };

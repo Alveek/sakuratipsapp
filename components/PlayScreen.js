@@ -96,13 +96,15 @@ function PlayScreen({ transcript, audioSrc, extLink, episodeName }) {
 					<Controls
 						showFurigana={showFurigana}
 						setShowFurigana={setShowFurigana}
+						vocab={transcript[sentence].vocabulary}
+						v_sentence={transcript[sentence].jap}
 						quit={() => setSentence(transcript.length - 1)}
 					/>
 					<Divider />
 					<Box mt={5} mx="auto" maxWidth="960px" textAlign="center">
 						{showJap ? (
 							<Text
-								fontSize="3xl"
+								fontSize={{ base: "26px", md: "3xl" }}
 								color="blue.700"
 								onClick={() => setShowJap(false)}
 							>
