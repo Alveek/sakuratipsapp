@@ -56,7 +56,7 @@ export default function episode_157() {
 					v_eng: "last week",
 				},
 				{
-					v_jap: "迚も (とても)",
+					v_jap: "とても",
 					v_eng: "very",
 				},
 				{
@@ -121,14 +121,6 @@ export default function episode_157() {
 				{
 					v_jap: "落ちる (おちる)",
 					v_eng: "to fall down; to drop; to fall",
-				},
-				{
-					v_jap: "こと",
-					v_eng: "not sure about this",
-				},
-				{
-					v_jap: "いいます",
-					v_eng: "not sure about this",
 				},
 			],
 			start: { min: 1, sec: 21 },
