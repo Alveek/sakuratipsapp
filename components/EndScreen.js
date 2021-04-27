@@ -102,7 +102,7 @@ function EndScreen({ startAgain, extLink }) {
 					_hover={{ filter: "brightness(0.92)" }}
 					href="https://www.patreon.com/bePatron?u=47302003&redirect_uri=https%3A%2F%2Fsakuratips.com%2F2021%2F03%2F29%2F152%2F&utm_medium=widget"
 				>
-					Support us on patreon
+					Support me on patreon
 				</Button>
 			</Box>
 		</Box>

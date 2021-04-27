@@ -5,8 +5,6 @@ import {
 	Text,
 	Button,
 	Progress,
-	Flex,
-	Spacer,
 	Divider,
 	Heading,
 } from "@chakra-ui/react";

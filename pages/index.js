@@ -28,7 +28,7 @@ export default function Home() {
 								display="inline"
 								color="pink"
 							>
-								{episode.number}.
+								{index + 1}.
 							</Text>{" "}
 							<Text
 								fontSize={{ base: "18px", md: "20px", lg: "24px" }}
