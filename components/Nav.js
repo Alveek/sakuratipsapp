@@ -13,11 +13,7 @@ import {
 
 export default function Nav() {
 	return (
-		<Box
-			as="nav"
-			// boxShadow="md"
-			bg="#FFCDCB"
-		>
+		<Box as="nav" bg="#FFCDCB">
 			<Container maxW="960px" pt={1} px={{ base: 5, md: 8 }}>
 				<Flex
 					height={{ base: "55px", md: "60px" }}

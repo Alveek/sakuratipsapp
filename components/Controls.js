@@ -1,11 +1,4 @@
-import {
-	FormControl,
-	FormLabel,
-	Switch,
-	Box,
-	Button,
-	Flex,
-} from "@chakra-ui/react";
+import { FormControl, FormLabel, Switch, Button, Flex } from "@chakra-ui/react";
 import VocabModal from "./VocabModal";
 import { useEffect } from "react";
 
