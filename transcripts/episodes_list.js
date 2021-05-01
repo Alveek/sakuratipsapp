@@ -35,6 +35,10 @@ let episode_list = [
 		number: 180,
 		name: "電車 Train",
 	},
+	{
+		number: 175,
+		name: "読書 Reading Books",
+	},
 ];
 
 export { episode_list };
