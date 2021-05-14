@@ -12,7 +12,7 @@ import Controls from "./Controls";
 import EndScreen from "./EndScreen";
 
 function PlayScreen({ transcript, audioSrc, extLink, episodeName }) {
-	let [sentence, setSentence] = useState(2);
+	let [sentence, setSentence] = useState(0);
 	let [disablePlayButton, setDisablePlayButton] = useState(false);
 	let [showJap, setShowJap] = useState(false);
 	let [showEng, setShowEng] = useState(false);
