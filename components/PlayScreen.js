@@ -155,7 +155,7 @@ function PlayScreen({ transcript, audioSrc, extLink, episodeName }) {
 					<Box
 						mt="90px"
 						position={{ base: "absolute", md: "static" }}
-						bottom={{ base: "35px" }}
+						bottom={{ base: "55px" }}
 						right={{ base: "0px" }}
 						width={{ base: "100%" }}
 						display="flex"
