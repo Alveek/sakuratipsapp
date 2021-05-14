@@ -43,6 +43,10 @@ let episode_list = [
 		number: 192,
 		name: "勉強 Study",
 	},
+	{
+		number: 193,
+		name: "日本人の英語力 English Level Of Japanese People",
+	},
 ];
 
 export { episode_list };

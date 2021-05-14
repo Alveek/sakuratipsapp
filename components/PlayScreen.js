@@ -102,8 +102,9 @@ function PlayScreen({ transcript, audioSrc, extLink, episodeName }) {
 					<Box mt={5} mx="auto" maxWidth="960px" textAlign="center">
 						{showJap ? (
 							<Text
-								fontSize={{ base: "26px", md: "3xl" }}
+								fontSize={{ base: "24px", md: "3xl" }}
 								color="blue.700"
+								lineHeight="2"
 								onClick={() => setShowJap(false)}
 							>
 								<div
@@ -126,7 +127,7 @@ function PlayScreen({ transcript, audioSrc, extLink, episodeName }) {
 						)}
 						{showEng ? (
 							<Text
-								fontSize="xl"
+								fontSize="lg"
 								color="teal.500"
 								fontWeight="500"
 								onClick={() => setShowEng(false)}
