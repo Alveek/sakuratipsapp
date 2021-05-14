@@ -12,7 +12,7 @@ import Controls from "./Controls";
 import EndScreen from "./EndScreen";
 
 function PlayScreen({ transcript, audioSrc, extLink, episodeName }) {
-	let [sentence, setSentence] = useState(0);
+	let [sentence, setSentence] = useState(2);
 	let [disablePlayButton, setDisablePlayButton] = useState(false);
 	let [showJap, setShowJap] = useState(false);
 	let [showEng, setShowEng] = useState(false);
@@ -70,7 +70,7 @@ function PlayScreen({ transcript, audioSrc, extLink, episodeName }) {
 	}
 
 	return (
-		<Box bg="rgba(255, 255, 255, .3)" p={2} mt={{ base: "30px", md: "150px" }}>
+		<Box bg="rgba(255, 255, 255, .3)" p={2} mt={{ base: "10px", md: "150px" }}>
 			<Heading
 				bg="rgba(255, 255, 255, 0.2)"
 				color="blue.800"
@@ -102,7 +102,7 @@ function PlayScreen({ transcript, audioSrc, extLink, episodeName }) {
 					<Box mt={5} mx="auto" maxWidth="960px" textAlign="center">
 						{showJap ? (
 							<Text
-								fontSize={{ base: "24px", md: "3xl" }}
+								fontSize={{ base: "22px", md: "3xl" }}
 								color="blue.700"
 								lineHeight="1.8"
 								onClick={() => setShowJap(false)}
@@ -127,7 +127,7 @@ function PlayScreen({ transcript, audioSrc, extLink, episodeName }) {
 						)}
 						{showEng ? (
 							<Text
-								fontSize="lg"
+								fontSize={{ base: "md", md: "3xl" }}
 								color="teal.500"
 								fontWeight="500"
 								onClick={() => setShowEng(false)}
@@ -155,7 +155,7 @@ function PlayScreen({ transcript, audioSrc, extLink, episodeName }) {
 					<Box
 						mt="90px"
 						position={{ base: "absolute", md: "static" }}
-						bottom={{ base: "50px" }}
+						bottom={{ base: "35px" }}
 						right={{ base: "0px" }}
 						width={{ base: "100%" }}
 						display="flex"

@@ -17,7 +17,7 @@ export default function Home() {
 			<Box
 				bg="rgba(255,255,255, 0.4);"
 				mx="auto"
-				mt={{ base: "70px", md: "200px" }}
+				mt={{ base: "30px", md: "200px" }}
 				maxWidth="max-content"
 			>
 				{episode_list.map((episode, index) => (
