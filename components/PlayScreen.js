@@ -104,7 +104,7 @@ function PlayScreen({ transcript, audioSrc, extLink, episodeName }) {
 							<Text
 								fontSize={{ base: "24px", md: "3xl" }}
 								color="blue.700"
-								lineHeight="2"
+								lineHeight="1.8"
 								onClick={() => setShowJap(false)}
 							>
 								<div
